@@ -1,0 +1,401 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbars for all browsers */
+
+  
+  /* Works for Chrome, Safari, and Edge */
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #dddddd;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #888888;
+  }
+ 
+
+select:active,
+select:focus {
+    outline: none;
+    border: 1px solid #24a19c;
+}
+
+@media (max-width: 1264px) {
+    .title-div span {
+        width: 20%;
+    }
+    .login-div {
+        width: 50%;
+    }
+    .add-offre-section {
+        width: 90%;
+    }
+    .sidebar {
+        width: 30%;
+    }
+}
+@media (max-width: 1076px) {
+    .title-div span {
+        width: 15%;
+    }
+    .login-div {
+        width: 60%;
+    }
+    .partie-slide {
+        width: 45%;
+    }
+
+    .partie-detail {
+        width: 40%;
+    }
+    .div-categorie {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 935px) {
+    .title-div span {
+        width: 12%;
+    }
+    .login-div {
+        width: 70%;
+    }
+    .add-offre-section {
+        width: 100%;
+        padding: 10px;
+    }
+    .add-offre,
+    .add-offre-annonce,
+    .add-offre-location {
+        flex-wrap: wrap;
+    }
+    .add-offer-select {
+        /* border:1px solid; */
+        width: 40%;
+        display: flex;
+    }
+    .add-offer-select label {
+        /* border: 1px solid red; */
+        flex: 2;
+    }
+    .offre-page {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+    .partie-slide,
+    .partie-detail {
+        width: 90%;
+    }
+    .partie-detail {
+        margin: auto !important;
+    }
+    .partie-droit-register{
+        display: none;
+    }
+    .partie-gauche-register{
+        width: 90%!important;
+        margin: auto;
+    }
+}
+@media (max-width: 900px) {
+
+}
+@media (max-width: 885px) {
+    .title-div span {
+        width: 10%;
+    }
+    .sidebar {
+        width: 35%;
+    }
+}
+@media (max-width: 850px) {
+    .form-div {
+        padding: 8px !important;
+    }
+    .footer-login .partie-droite {
+        left: 27%;
+        bottom: 50px;
+    }
+    .footer-login .partie-gauche {
+        left: 22%;
+    }
+    .password-input input{
+        width: 100%!important;
+    }
+}
+@media (max-width: 765px) {
+    .title-div-login span {
+        width: 10%;
+    }
+    .footer-login .partie-droite {
+        left: 26%;
+    }
+    .footer-login .partie-gauche {
+        left: 20%;
+    }
+    .add-offer-select {
+        display: block;
+        width: 100%;
+    }
+    .add-offre-image {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .input-div-nom {
+        width: 100%;
+    }
+    select,
+    input,
+    .input-div,
+    .div-image {
+        /* width: 80% !important; */
+    }
+    .checkbox-register input{
+        width: 2.5%!important;
+    }
+}
+@media (max-width: 650px) {
+    .title-div-login span {
+        width: 8%;
+    }
+    .login-div {
+        width: 77%;
+        margin-top: 20px;
+    }
+    .footer-login .partie-droite {
+        left: 23%;
+    }
+    .footer-login .partie-gauche {
+        left: 14%;
+    }
+    .sidebar {
+        width: 45%;
+    }
+}
+@media (max-width: 580px) {
+    .login-div {
+        width: 82%;
+    }
+    .title-div-login span {
+        width: 5%;
+    }
+    .footer-login .partie-droite {
+        left: 17%;
+        bottom: 7%;
+    }
+    .footer-login .partie-gauche {
+        left: 3%;
+        top: 94%;
+    }
+    .google-fb {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .facebook,
+    .google {
+        width: 100% !important;
+        margin: 0px !important;
+    }
+    .footer-login {
+        text-align: center;
+    }
+    .sidebar {
+        width: 50%;
+    }
+    .offre-page {
+        width: 90%;
+    }
+    .partie-slide,
+    .partie-detail {
+        width: 98%;
+        margin: 8px !important;
+    }
+}
+@media (max-width: 465px) {
+    .login-div {
+        border-radius: none !important;
+        margin-top: 0px;
+        padding: 10px;
+        width: 100%;
+    }
+    .footer-login .partie-droite,
+    .partie-gauche {
+        left: 10%;
+    }
+    .sidebar {
+        width: 65%;
+        margin-left: 0 !important;
+        margin: auto !important;
+    }
+      .checkbox-register input{
+        width: 5%!important;
+    }
+}
+@media (max-width: 340px) {
+    .title-div span {
+        width: 7%;
+    }
+    .text-Inscrivez {
+        padding: 0px !important;
+    }
+    .footer-login .partie-droite {
+        left: 1% !important ;
+    }
+    .sidebar {
+        width: 80%;
+    }
+}
+@media (max-width: 300px) {
+    .footer-login {
+        position: none !important;
+        height: 40%;
+    }
+}
+.route-active {
+    background-color: #f0f0f0; /* Gray background for active route */
+    border-left-color: #000; /* Black border for active route */
+    font-weight: bold; /* Bold text for active route */
+}
+
+
+.card-header{
+    background-color:#24A19C !important;
+}
+
+#lightbox {
+    /* (A1) COVERS FULLSCREEN */
+    position: fixed; z-index: 990;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    cursor: zoom-out;
+   
+    /* (A2) BACKGROUND */
+    background: rgba(0, 0, 0, 0.5);
+   
+    /* (A3) CENTER IMAGE ON SCREEN */
+    display: flex;
+    align-items: center;
+    align-items: center;
+   
+    /* (A4) HIDDEN BY DEFAULT */
+    visibility: hidden;
+    opacity: 0;
+   
+    /* (A5) SHOW/HIDE ANIMATION */
+    transition: opacity ease 0.4s;
+  }
+   
+  /* (A6) TOGGLE VISIBILITY */
+  #lightbox.show {
+    visibility: visible;
+    opacity: 1;
+  }
+   
+  /* (B) LIGHTBOX IMAGE */
+  #lightbox img {
+      height: 100%;
+    width: 100%;
+
+  }
+  .zoomD{
+      cursor:zoom-in;
+  }
+   
+  #modalbox {
+    /* (A1) COVERS FULLSCREEN */
+    position: fixed; z-index: 999;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    cursor: zoom-out;
+   
+    /* (A2) BACKGROUND */
+    background: rgba(0, 0, 0, 0.5);
+   
+    /* (A3) CENTER IMAGE ON SCREEN */
+    display: flex;
+    align-items: center;
+    align-items: center;
+   
+    /* (A4) HIDDEN BY DEFAULT */
+    visibility: hidden;
+    opacity: 0;
+   
+    /* (A5) SHOW/HIDE ANIMATION */
+    transition: opacity ease 0.4s;
+  }
+   
+  /* (A6) TOGGLE VISIBILITY */
+  #modalbox.show {
+    visibility: visible;
+    opacity: 1;
+  }
+   
+  /* (B) LIGHTBOX IMAGE */
+  #modalbox img {
+      height: 100%;
+    width: 100%;
+  }
+  .modalzoomD{
+      cursor:zoom-in;
+  }
+  
+  
+#active-page {
+    display : inline-block;
+    color: var(--primary-color); 
+    border-color: var(--primary-color);
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Ajustez selon vos besoins */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.fleche {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    z-index: 1000;
+}
+
+.fleche.gauche {
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.fleche.droite {
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
+
